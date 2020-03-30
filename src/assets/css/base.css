@@ -1,0 +1,213 @@
+
+body,
+dd,
+ul,
+ol,
+label,
+li,
+h1,
+h2,
+h3,
+legend,
+input,
+textarea,
+p,
+div,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PingFangSC-Regular;
+  font-size: 30px;
+}
+
+/* 默认不要下划线 */
+a {
+  text-decoration: none;
+}
+
+/* 按钮文本不可选 */
+
+button {
+  user-select: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* 加载不出来的图片不要显示灰色边框 */
+
+img:not([src]),
+img[src=""] {
+  opacity: 0;
+}
+img {
+  height: 100%;
+  width: 100%;
+  content: normal !important;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+select,
+button,
+textarea {
+  font-size: 100%;
+  font: inherit;
+}
+
+html {
+  width: 100%;
+  /*禁止html5页面点击事件阴影*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  font-size: calc(100vw / 7.5);
+  font-family: PingFangSC-Regular;
+}
+
+/* 禁止长按显示菜单栏 */
+a,
+img {
+  -webkit-touch-callout: none;
+  /*阻止按压图片弹出保存*/
+  /* pointer-events: none; */
+}
+
+/* 流畅滚动 */
+
+body {
+  -webkit-overflow-scrolling: touch;
+  font-size: 16px;
+  margin: 0;
+  /* background-color: #f4f5f6; */
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* border-top: 0.5px solid transparent; */
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none
+}
+
+.cell-separate-line {
+  position: absolute;
+  width: 6.82rem;
+  height: 0.02rem;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  opacity: 0.1;
+  background: black;
+  z-index: 3;
+}
+
+.mint-checkbox-core::after {
+  left: 7px !important;
+}
+
+.page-wraper {
+  /*padding-top: 0.17rem;*/
+  position: relative;
+  min-height: 100vh;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/* .van-tab{
+max-width: 150px;
+}
+.van-tabs__nav{
+justify-content: flex-end;
+}
+.van-tabs--line .van-tabs__wrap{
+  height: 88px;
+}
+.van-overlay{
+  height: 0px;
+}
+.van-dropdown-item__content{
+  width: 50%;
+}
+ .van-tab__text{
+   line-height: 88px;
+   height: 88px;
+   font-family: PingFangSC-Regular;
+   font-size: 32px;
+   color: #82888E;
+   text-align: center;
+ }
+.van-tabs__line{
+  bottom: 24px;
+  width: 40px !important;
+  height: 4px;
+  background: #222A37;
+}
+.van-hairline--top-bottom:after, 
+.van-hairline-unset--top-bottom:after{
+  border-width: 0px;
+}
+.van-cell:not(:last-child):after {
+  position: absolute;
+  box-sizing: border-box;
+  content: " ";
+  pointer-events: none;
+  right: 0;
+  bottom: 0;
+  left: 2.133vw;
+  border-bottom: 1px solid #ebedf0;
+  -webkit-transform: scaleY(.5);
+  transform: scaleY(.5);
+}
+.van-ellipsis{
+  font-family: PingFangSC-Regular;
+  font-size: 24px;
+  color: #222A37;
+  text-align: center;
+}
+.van-dropdown-menu__title:after {
+  position: absolute;
+  top: 50%;
+  right: -.533vw;
+  margin-top: -.667vw;
+  border-color: transparent transparent currentcolor currentcolor;
+  border-style: solid;
+  border-width: .4vw;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: .8;
+  content: "";
+}
+.van-dropdown-menu__title{
+  height: 88px;
+}
+.van-ellipsis{
+  line-height: 88px;
+} */
+/* vant轮播 */
+/* .van-swipe__indicator{
+  width: 12px;
+  height: 12px;
+  background: rgba(0,0,0,0.30);
+}
+.van-swipe__indicator:not(:last-child){
+  margin-right: 12px;
+}
+.van-swipe__indicator--active{
+  width: 32px;
+  height: 12px;
+  background: #FFFFFF;
+  border-radius: 8px;
+} */

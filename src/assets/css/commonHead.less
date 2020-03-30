@@ -1,0 +1,68 @@
+.commonHead {
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  .icoLeft {
+    height: 100px;
+    width: 112px;
+    img.map_ico_back {
+      height: 37.5px;
+      width: 37.5px;
+      padding: 34.7px 0px 32.8px 45.7px;
+      display: block;
+    }
+    img.ico_back {
+      display: block;
+      height: 34.6px;
+      width: 44.4px;
+      padding: 32px 28px 34.4px 48px;
+    }
+    .icoNothing {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .iconCenter {
+    overflow:hidden;//隐藏文字
+    text-overflow:ellipsis;//显示 ...
+    white-space:nowrap;//不换行
+    width:432px;
+    // flex: 1;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: 700;
+    font-family: PingFangSC-Medium;
+    font-size: 36px;
+    color: #29292A;
+    // text-align: justify;
+  }
+  .icoRight {
+    display: flex;
+    height: 100px;
+    width: 112px;
+    align-items: center;
+    .icoNothing {
+      height: 100%;
+      width: 100%;
+    }
+    .addIcon {
+      display: block;
+      width: 52px;
+      height: 46px;
+      padding-left: 16px;
+      padding-right: 44px;
+      font-family: PingFangSC-Regular;
+      font-weight: 400;
+      font-size: 30px;
+      color: #29292A;
+    }
+  }
+
+}
